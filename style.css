@@ -14,18 +14,29 @@ html {
   font-size: 3em;
   padding: 1rem;
   text-align: center;
+
+  width: 300px;
+
+  flex: 50%;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%; */
 }
 
 .box-1 {
   background-color: aqua;
+  /*  flex-grow: 3; */
 }
 
 .box-2 {
   background-color: mediumorchid;
+  /* align-self: flex-end; */
 }
 
 .box-3 {
   background-color: yellowgreen;
+  /* align-self: flex-start; */
+  /*  flex-grow: 1; */
 }
 
 .box-4 {
@@ -55,4 +66,21 @@ html {
 .container {
   display: flex;
   border: 8px solid black;
+
+  height: 80vh;
+
+  /* set direction on Main Axis (default is row) */
+  flex-direction: column;
+
+  /*force items onto a single line or wrap to multiple lines (default is nowrap)*/
+  flex-wrap: wrap;
+
+  /* defines space distribution between items on Main Axis */
+  justify-content: center;
+
+  /* define space distribution on Cross Axis (default is stretch)*/
+  align-items: center;
+
+  /* define space distribution between rows on Cross Axis */
+  /* align-content: center; */
 }
