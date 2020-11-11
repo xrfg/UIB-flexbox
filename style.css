@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.box {
+  font-size: 3em;
+  padding: 1rem;
+  text-align: center;
+}
+
+.box-1 {
+  background-color: aqua;
+}
+
+.box-2 {
+  background-color: mediumorchid;
+}
+
+.box-3 {
+  background-color: yellowgreen;
+}
+
+.box-4 {
+  background-color: lavender;
+}
+
+.box-5 {
+  background-color: hotpink;
+}
+
+.box-6 {
+  background-color: red;
+}
+
+.box-7 {
+  background-color: blue;
+}
+
+.box-8 {
+  background-color: goldenrod;
+}
+
+.box-9 {
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+  border: 8px solid black;
+}
