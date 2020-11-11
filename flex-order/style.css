@@ -4,6 +4,7 @@
 
 .item {
   font-family: sans-serif;
+  letter-spacing: -5px;
   font-size: 1.5em;
   background-color: rgb(199, 173, 233);
   margin: 6px;
@@ -11,11 +12,35 @@
   border: 5px solid slategrey;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(130, 74, 202);
+  color: rgb(129, 74, 202);
 }
 
 article.item {
   border: 6px solid rebeccapurple;
   padding: 80px;
   flex: 2;
+}
+
+.main-article {
+  order: 2;
+}
+
+.sidebar-left {
+  order: 1;
+  flex: 1;
+}
+
+.sidebar-right {
+  order: 3;
+  flex: 1;
+}
+
+/* when it gets weird you can see where is the breakpoint and make it look good, in this case is turning the flex container into a column */
+@media (max-width: 775px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .sidebar-left {
+    order: 2;
+  }
 }
